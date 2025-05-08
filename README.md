@@ -4,7 +4,7 @@
 
 | 分类  | 开源软件  | 开源软件基线版本  | GaussDB内核基线版本  | 驱动基线版本  |  使用指南 |
 | :------------ | :------------ | :------------ | :------------ | :------------ | :------------ |
-| ORM  | MyBatis |   |  505.2.0  | 506.0.0  |   |
+| ORM  | MyBatis | 3.5.14  |  505.2.0  | 506.0.0  | [使用指南](./MyBatis/3.5.x/README.md)  |
 | ORM  | MyBatisPlus |   |  505.2.0  | 506.0.0  |   |
 | ORM  | Hibernate |   |  505.2.0  | 506.0.0  |   |
 | ORM  | Spring Data JPA |   |  505.2.0  | 506.0.0  |   |
@@ -12,13 +12,17 @@
 | ORM  | Spring Data R2DBC |   |  505.2.0  | 506.0.0  |   |
 | 连接池  | HikariCP  |   | 505.2.0  | 506.0.0  |   |
 | 连接池  | Druid  |   | 505.2.0  | 506.0.0  |   |
-| 数据库工具  | Dbeaver  |   | 505.2.0  | 506.0.0 | [Dbeaver 连接 GaussDB 使用指南](./dbeaver/25/database-driver-gaussdb.md)  |
+| 数据库工具  | Dbeaver  |   | 505.2.0  | 506.0.0 | [开发使用指南](./dbeaver/25/database-driver-gaussdb.md)  |
 | 大数据软件  |  Flink |   | 505.2.0  | 506.0.0 |   |
 | 大数据软件  |  FlinkCDC |   | 505.2.0  | 506.0.0 |   |
 
 # JDBC驱动
 
 > 需要使用JDK 17及其以上版本
+
+* 连接串：jdbc:gaussdb://host:port/database
+
+* Driver名称： com.huawei.gaussdb.jdbc.Driver
 
 * maven
 
