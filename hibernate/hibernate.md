@@ -12,8 +12,6 @@ Hibernate是一个开源的对象关系映射(ORM)框架，它简化了Java应�
 Hibernate的核心优势在于它允许开发者以面向对象的方式操作数据库，而不必编写大量的JDBC代码。
 
 ## 2 如何使用
-本节概述了 DBeaver 用于建立直接连接的设置，以及使用 SSH、Proxy 配置安全连接的方法，同时还介绍了针对 GaussDB 的 JDBC 驱动程序的设置。
-
 ### 2.1 添加依赖
 首先，确保你的项目中包含Hibernate和GaussDB JDBC驱动的依赖：
 ```
