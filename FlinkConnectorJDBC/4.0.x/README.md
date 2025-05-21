@@ -1,17 +1,5 @@
-<p align="center">
-  <h1 align="center">Flink connector jdbc implementation for GaussDB</h1>
-
-
-## 目录
-
-- [项目介绍](#项目介绍)
-- [前置条件](#前置条件)
-- [使用说明](#使用说明)
-- [获取帮助](#获取帮助)
-- [如何贡献](#如何贡献)
-
-## 项目介绍
-‌[Flink-connector-jdbc-gaussdb‌](https://github.com/HuaweiCloudDeveloper/gaussdb-flink-connector-jdbc)  是一个开源的GaussDB连接器，专为Flink写入数据(sink)到GaussDB场景下使用。
+‌[FApache Flink ‌](https://flink.apache.org/) 是一个开源的分布式流处理框架，专为大规模数据处理设计，支持流处理和批处理一体化。它能够在无界和有界数据流上进行有状态计算，具有高吞吐量、低延迟的特性，广泛应用于实时数据处理场景。
+本文档主要介绍 [Flink-connector-jdbc-gaussdb](https://github.com/HuaweiCloudDeveloper/gaussdb-flink-connector-jdbc) 的使用。[Flink-connector-jdbc-gaussdb](https://github.com/HuaweiCloudDeveloper/gaussdb-flink-connector-jdbc)是一个开源的GaussDB连接器，专为Flink写入数据(sink)到GaussDB场景下使用。
 
 **核心特性：**
 1. 新增数据：对应insert功能, 新增增量数据。
@@ -22,10 +10,10 @@
 ## 前置条件
 本项目提供的连接器使用前需预先安装 Flink集群及其相关运行环境，并下载对应jar包放置Flink集群各节点的Flink 安装目录 ~/lib 下！！！。
 需要下载的jar包 <strong>GaussDB驱动</strong> + <strong>flink-connector-jdbc-gaussdb</strong> + <strong>flink-connector-jdbc-core</strong>
-相关依赖jar包下载地址(以3.3.0-1.20版本举例):
+相关依赖jar包下载地址(以4.0.0-2.0版本举例):
 [**GaussDB驱动**](https://repo1.maven.org/maven2/com/huaweicloud/gaussdb/gaussdbjdbc/506.0.0.b058-jdk7/gaussdbjdbc-506.0.0.b058-jdk7.jar)
-[**flink-connector-jdbc-gaussdb**](https://repo.maven.apache.org/maven2/com/huaweicloud/gaussdb/flink/flink-connector-jdbc-gaussdb/3.3.0-1.20/)
-[**flink-connector-jdbc-core**](https://repo1.maven.org/maven2/org/apache/flink/flink-connector-jdbc-core/3.3.0-1.20/)
+[**flink-connector-jdbc-gaussdb**](https://repo.maven.apache.org/maven2/com/huaweicloud/gaussdb/flink/flink-connector-jdbc-gaussdb/4.0.0-2.0/)
+[**flink-connector-jdbc-core**](https://repo1.maven.org/maven2/org/apache/flink/flink-connector-jdbc-core/4.0.0-2.0/)
 
 
 > **系统要求如下：**
@@ -37,8 +25,6 @@
 
 | jar包版本                                                                                                                                                 | Flink集群系统版本(推荐)                                | 备注                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------|
-| [flink-connector-jdbc-gaussdb-3.3.0-1.20](https://repo.maven.apache.org/maven2/com/huaweicloud/gaussdb/flink/flink-connector-jdbc-gaussdb/3.3.0-1.20/) | 基于 鲲鹏服务器 + Huawei Cloud EulerOS 2.0 标准版 64位 安装部署 | Flink1.20及以下集群环境适用     |
-| [flink-connector-jdbc-core-3.3.0-1.20](https://repo.maven.apache.org/maven2/com/huaweicloud/gaussdb/flink/flink-connector-jdbc-gaussdb/3.3.0-1.20/)    | 基于 鲲鹏服务器 + Huawei Cloud EulerOS 2.0 标准版 64位 安装部署 | Flink1.20及以下集群环境适用     |
 | [flink-connector-jdbc-gaussdb-4.0.0-2.0](https://repo1.maven.org/maven2/org/apache/flink/flink-connector-jdbc-core/4.0.0-2.0/)                         | 基于 鲲鹏服务器 + Huawei Cloud EulerOS 2.0 标准版 64位 安装部署 | Flink2.0集群环境适用       |	
 | [flink-connector-jdbc-core-4.0.0-2.0](https://repo1.maven.org/maven2/org/apache/flink/flink-connector-jdbc-core/4.0.0-2.0/)                            | 基于 鲲鹏服务器 + Huawei Cloud EulerOS 2.0 标准版 64位 安装部署 | Flink2.0集群环境适用         |	
 | [GaussDB驱动1](https://repo1.maven.org/maven2/com/huaweicloud/gaussdb/gaussdbjdbc/506.0.0.b058-jdk7/gaussdbjdbc-506.0.0.b058-jdk7.jar)                   | 基于 鲲鹏服务器 + Huawei Cloud EulerOS 2.0 标准版 64位 安装部署 |Flink集群环境JDK 17以下使用  如 JDK 8、11 |	
@@ -49,11 +35,3 @@
 2. 建议直接下载jar包后放置Flink安装目录 ~/lib 下使用,如要使用源码在本地重新打包后使用，注意对应连接器和JDK版本。
 3. 连接器的选择: flink-connector-jdbc-gaussdb和flink-connector-jdbc-core需要与Flink的版本对应匹配 不支持混合版本使用。
 4. 源码仓库地址: [**flink-connector-jdbc-gaussdb**](https://github.com/HuaweiCloudDeveloper/gaussdb-flink-connector-jdbc) , [**flink-connector-jdbc-core**](https://github.com/apache/flink-connector-jdbc)
-
-## 获取帮助
-- 更多问题可通过 [issue](https://github.com/HuaweiCloudDeveloper/gaussdb-flink-connector-jdbc/issues) 与我们取得联系
-
-
-## 如何贡献
-- Fork 此存储库并提交合并请求
-- 基于您的开源源码信息同步更新 README.md
