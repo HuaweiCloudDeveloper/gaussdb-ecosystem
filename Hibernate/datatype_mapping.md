@@ -7,7 +7,7 @@ GaussDB）
 
 | Java 类型                                          | Hibernate 类型                                          | GaussDB SQL 类型                 |
 |--------------------------------------------------|-------------------------------------------------------|--------------------------------|
-| `RowId`                                          | `org.hibernate.type.SqlTypes#ROWID`                   | `rowid`                        |
+| `java.sql.RowId`                                 | `org.hibernate.type.SqlTypes#ROWID`                   | `rowid`                        |
 | `java.lang.Boolean` / `boolean`                  | `org.hibernate.type.SqlTypes#BOOLEAN`                 | `boolean`                      |
 | `java.lang.Byte` / `byte`                        | `org.hibernate.type.SqlTypes#TINYINT`                 | `tinyint`                      |
 | `java.lang.Short` / `short`                      | `org.hibernate.type.SqlTypes#SMALLINT`                | `smallint`                     |
