@@ -8,7 +8,7 @@
 |--------------------------------------------------|-------------------------------------------------------|--------------------------------|
 | `RowId`                                          | `org.hibernate.type.SqlTypes#ROWID`                   | `rowid`                        |
 | `java.lang.Boolean` / `boolean`                  | `org.hibernate.type.SqlTypes#BOOLEAN`                 | `boolean`                      |
-| `java.lang.Byte` / `byte`                        | `org.hibernate.type.SqlTypes#TINYINT`                 | `smallint` (GaussDB 无 TINYINT) |
+| `java.lang.Byte` / `byte`                        | `org.hibernate.type.SqlTypes#TINYINT`                 | `tinyint`                      |
 | `java.lang.Short` / `short`                      | `org.hibernate.type.SqlTypes#SMALLINT`                | `smallint`                     |
 | `java.lang.Integer` / `int`                      | `org.hibernate.type.SqlTypes#INTEGER`                 | `integer`                      |
 | `java.lang.Long` / `long`                        | `org.hibernate.type.SqlTypes#BIGINT`                  | `bigint`                       |
@@ -39,7 +39,7 @@
 
 ---
 
-细节说明：
+**细节说明：**
 
 1. **精度控制**：
     - `$p` 表示精度参数（如 `timestamp(6)`）
