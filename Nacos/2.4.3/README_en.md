@@ -1,18 +1,20 @@
 Nacos with GaussDB User Guide
 
-Nacos is a lightweight and easy-to-use dynamic service discovery and configuration management center, simplifying microservices architecture.
+Nacos is a lightweight and easy-to-use dynamic service discovery and configuration management center that simplifies microservices architecture.
 
 Official Developer Guide: https://nacos.io/
 
-Nacos is deeply integrated with GaussDB, enabling efficient storage and management of configuration data, providing a more stable and powerful data foundation for microservices architecture.
+Nacos is deeply integrated with GaussDB, enabling data storage in GaussDB databases.
 
 ElasticJob Development Guide
 
-Development documentation can be found at:
+Installing Nacos
 
-Nacos Plugin Repository  
-GitHub: https://github.com/nacos-group/nacos-plugin
+For Nacos installation, refer to:  
+https://nacos.io/blog/faq/nacos-user-question-history13991/
 
-Demo Repository  
-GitCode: https://gitcode.com/chenzhida/servicecomb-fence/overview  
-Branch: dev_czd_nacos
+Using the Nacos Plugin
+
+Reference:  
+https://bbs.huaweicloud.com/blogs/438948
+
