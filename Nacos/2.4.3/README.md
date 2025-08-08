@@ -4,16 +4,12 @@ Nacos 是一款轻量级、易用的动态服务发现与配置管理中心，�
 
 官方开发指南参考：[https://nacos.io/](https://nacos.io/)
 
-Nacos 深度适配 GaussDB，实现配置信息的高效存储与管理，为微服务架构提供更稳定、更强大的数据支撑。
+Nacos 深度适配GaussDB，实现支持存储数据到GaussDB数据库中。
 
 ## ElasticJob开发指导
-开发指南可以参考
 
-nacos plugin插件仓库
-git信息：https://github.com/nacos-group/nacos-plugin
-demo地址仓库：
-git信息:https://gitcode.com/chenzhida/servicecomb-fence/overview
-分支：dev_czd_nacos
+### 安装nacos
+安装nacos参考：https://nacos.io/blog/faq/nacos-user-question-history13991/
 
-
-
+### 使用nacos plugin
+参考：https://bbs.huaweicloud.com/blogs/438948
