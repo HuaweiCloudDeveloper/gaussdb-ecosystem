@@ -62,8 +62,9 @@ flush privileges;
 
 ##### 以下至【案例分享】前的步骤都需要在 af_env python3 虚拟环境下执行
 
-* 安装相关依赖包  
+* 安装相关依赖包
 ```shell
+yum install mysql-devel python3-devel gcc
 pip install mysql-connector-python
 pip install apache-airflow[mysql]
 ```
@@ -76,11 +77,6 @@ CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${A
 pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 ```
 
-* 创建Airflow DAG的存放目录
-```shell
-mkdir /root/airflow/dags
-```
-
 * 修改必要的部分airflow配置文件 airflow.cfg
 
 <details>
@@ -89,9 +85,9 @@ mkdir /root/airflow/dags
 ``` 
 [core]
 dags_folder = /root/airflow/dags
-
-#修改时区
-default_timezone = Asia/Shanghai
+executor = LocalExecutor
+#按实际资源情况修改并发度
+parallelism = 8
 
 # 配置数据库
 sql_alchemy_conn=mysql+mysqldb://airflow:123456@localhost:3306/airflow?use_unicode=true&charset=utf8
@@ -100,10 +96,6 @@ sql_alchemy_conn=mysql+mysqldb://airflow:123456@localhost:3306/airflow?use_unico
 #设置时区
 default_ui_timezone = Asia/Shanghai
 
-#设置DAG显示方式
-# Default DAG view. Valid values are: ``tree``, ``graph``, ``duration``, ``gantt``, ``landing_times``
-dag_default_view = graph
-
 [scheduler]
 #设置默认发现新任务周期，默认是5分钟
 # How often (in seconds) to scan the DAGs directory for new files. Default to 5 minutes.
@@ -111,32 +103,24 @@ dag_dir_list_interval = 30
 ```
 </details>
 
-
-* 创建Airflow web UI登录用户
-
-```shell-airflow
-airflow users create \
---username airflow \
---firstname airflow \
---lastname airflow \
---role Admin \
---email airflow@huawei.com
-* 两次确认登录密码
-```
-
 * Airflow 初始化mysql 数据库
 ```shell-airflow
-airflow db init
+airflow db migrate
 ```
 
 * 后台启动 Airflow webserver及scheduler
 ```shell-airflow 
-airflow webserver --port 8080 -D
-airflow scheduler -D
+airflow standalone
+```
+
+* 创建Airflow 自建DAG的存放目录
+```shell
+mkdir /root/airflow/dags
 ```
 
 * 访问Airflow webui查看DAG
-浏览器访问：http://ip:8080  用户名：airflow 密码：123456
+  浏览器访问：http://ip:8080    
+  用户名/密码 保存在自动生成的文件 [simple_auth_manager_passwords.json.generated] 内
 
 
 ## 案例分享
@@ -144,8 +128,8 @@ airflow scheduler -D
 本案例实现场景为 从GaussDB的一张源表抽取数据写入到另外一张不同库的GaussDB目标表。          
 环境:
 * OS Huawei Cloud EulerOS 2.0 64bit 鲲鹏 ARM架构
-* Python 3.9.9 
-* Airflow-2.10.0
+* Python 3.9.9
+* Airflow-3.0.4
 * Airflow Metadata database - mysql-8.0.42
 * [Python链接GaussDB方式](https://github.com/HuaweiCloudDeveloper/gaussdb-python/tree/master) libpq.so.5.5
   
