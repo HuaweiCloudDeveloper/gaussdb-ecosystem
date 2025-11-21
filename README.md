@@ -33,7 +33,8 @@
 | ORM框架 | Rust   | Diesel                |           |    |            |                                                     |
 | ORM框架 | Rust   | SeaORM                |           |    |            |                                                     |
 | ORM框架 | Python   | SQLAlchemy            |           |    |            |                                                     |
-| ORM框架 | Python   | Django ORM            |           |    |            |                                                     |
+| ORM框架 | Python   | Django ORM            | 4.2.0      | 505.2.0   |  1.0.3  |  [使用指南](./DjangoORM/4.2.0/README.md)                   |
+| ORM框架 | Python   | Django ORM            | 5.2.0      | 505.2.0   |  1.0.3  |  [使用指南](./DjangoORM/5.2.0/README.md)                   |
 | ORM框架 | NodeJS   | Sequelize             |           |    |            |                                                     |
 | ORM框架 | NodeJS   | TypeORM               |           |    |            |                                                     |
 | ORM框架 | PHP   | Laravel(Eloquent)     |           |    |            |                                                     |

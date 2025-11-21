@@ -33,7 +33,8 @@ This project aggregates comprehensive information about the GaussDB open-source 
 | ORM Frameworks | Rust   | Diesel     |                  |    |            |                                                     |
 | ORM Frameworks | Rust   | SeaORM     |                  |    |            |                                                     |
 | ORM Frameworks | Python   | SQLAlchemy     |                  |    |            |                                                     |
-| ORM Frameworks | Python   | Django ORM     |                  |    |            |                                                     |
+| ORM Frameworks | Python   | Django ORM            | 4.2.0      | 505.2.0   |  1.0.3  |  [Usage Guide](./DjangoORM/4.2.0/README_en.md)                   |
+| ORM Frameworks | Python   | Django ORM            | 5.2.0      | 505.2.0   |  1.0.3  |  [Usage Guide](./DjangoORM/5.2.0/README_en.md)                   |
 | ORM Frameworks | NodeJS   | Sequelize     |                  |    |            |                                                     |
 | ORM Frameworks | NodeJS   | TypeORM     |                  |    |            |                                                     |
 | ORM Frameworks | PHP   | Laravel(Eloquent)    |                  |    |            |                                                     |
