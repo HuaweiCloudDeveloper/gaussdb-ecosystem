@@ -58,6 +58,7 @@
 | 中间件 | 注册配置中心 | Nacos                 |           | 505.2.0  | 506.0.0    |                                                     |
 | 中间件 | 注册配置中心 | Apollo                |           | 505.2.0  | 506.0.0    |                                                     |
 | 中间件 | 元数据管理  | OpenMetadata          |      | 505.2.0  | 506.0.0    |                      |
+| AI | 向量检索 | LangChain-GaussDB     | 0.1.0 | 505.2.0  |            | [使用指南](./LangChain-GaussDB/0.1.0/README.md) |
 
 * 可以通过 `select version()` 查询GaussDB版本信息。
 * 可以参考 [gaussdb-drivers](https://github.com/HuaweiCloudDeveloper/gaussdb-drivers) 进一步了解驱动信息。
