@@ -59,6 +59,7 @@ This project aggregates comprehensive information about the GaussDB open-source 
 | Middleware | Configuration Registries | Apollo            |                  | 505.2.0  | 506.0.0    |                                                     |
 | Middleware | Metadata Management | OpenMetadata           |                  | 505.2.0  | 506.0.0    |                        |
 | AI | Vector Search | LlamaIndex-GaussDB    | 0.1.0            | 505.2.0  |            | [Usage Guide](./LlamaIndex-GaussDB/0.1.0/README_en.md) |
+| AI | Vector Search | LangChain-GaussDB     | 0.1.0            | 505.2.0  |            | [Usage Guide](./LangChain-GaussDB/0.1.0/README_en.md) |
 
 * Use `select version()` to check your GaussDB version.  
 * Refer to [gaussdb-drivers](https://github.com/HuaweiCloudDeveloper/gaussdb-drivers) for driver details.  
