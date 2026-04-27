@@ -15,7 +15,6 @@ This project aggregates comprehensive information about the GaussDB open-source 
 |:------|:------|:---------------------|:-----------------| :------------ |:-----------|:----------------------------------------------------|
 | ORM Frameworks | Java   | MyBatis              | 3.5.14           |  505.2.0  | 506.0.0    | [Usage Guide](./MyBatis/3.5.x/README_en.md)         |
 | ORM Frameworks | Java   | MyBatis-Plus         | 3.5.12           |  505.2.0  | 506.0.0    | [Usage Guide](./MyBatis-Plus/3.5.x/README_en.md)    |
-| ORM Frameworks | Java   | MyBatis-PageHelper   |                  |  |            |                                                     |
 | ORM Frameworks | Java   | Spring JDBC          | 6.1.10           |  505.2.0  | 506.0.0    | [Usage Guide](./SpringJDBC/6.1.x/README_en.md)      |
 | ORM Frameworks | Java   | Spring R2DBC         | 6.1.10           |  505.2.0  | 1.0.0.RC1  | [Usage Guide](./SpringR2DBC/6.1.x/README_en.md)     |
 | ORM Frameworks | Java   | Spring Data JPA      | 3.4.5            |  505.2.0  | 506.0.0    | [Usage Guide](./SpringDataJPA/3.4.x/README_en.md)   |
@@ -27,18 +26,8 @@ This project aggregates comprehensive information about the GaussDB open-source 
 | ORM Frameworks | Java   | Spring Data R2DBC    | 3.5.1            |  505.2.0  | 1.0.0.RC1  | [Usage Guide](./SpringDataR2DBC/3.5.x/README_en.md) |
 | ORM Frameworks | Java   | Spring Data R2DBC    | 3.4.5            |  505.2.0  | 1.0.0.RC1  | [Usage Guide](./SpringDataR2DBC/3.4.x/README_en.md) |
 | ORM Frameworks | Go   | GORM     | v1.30.0          |  505.2.0  | v1.0.0-rc1 | [Usage Guide](./GORM/v1.30.0/README_en.md)          |
-| ORM Frameworks | Go   | Ent     |                  |    |            |                                                     |
-| ORM Frameworks | .Net   | Entity Framework Core    |                  |    |            |                                                     |
-| ORM Frameworks | .Net   | Nhibernate     |                  |    |            |                                                     |
-| ORM Frameworks | Rust   | Diesel     |                  |    |            |                                                     |
-| ORM Frameworks | Rust   | SeaORM     |                  |    |            |                                                     |
-| ORM Frameworks | Python   | SQLAlchemy     |                  |    |            |                                                     |
 | ORM Frameworks | Python   | Django ORM            | 4.2.0      | 505.2.0   |  1.0.3  |  [Usage Guide](./DjangoORM/4.2.0/README_en.md)                   |
 | ORM Frameworks | Python   | Django ORM            | 5.2.0      | 505.2.0   |  1.0.3  |  [Usage Guide](./DjangoORM/5.2.0/README_en.md)                   |
-| ORM Frameworks | NodeJS   | Sequelize     |                  |    |            |                                                     |
-| ORM Frameworks | NodeJS   | TypeORM     |                  |    |            |                                                     |
-| ORM Frameworks | PHP   | Laravel(Eloquent)    |                  |    |            |                                                     |
-| ORM Frameworks | PHP   | CakePHP     |                  |    |            |                                                     |
 | Development Frameworks | Connection Pools   | HikariCP             | 5.1.0            | 505.2.0  | 506.0.0    | [Usage Guide](./HikariCP/5.1.x/README_en.md)        |
 | Development Frameworks | Connection Pools   | Druid                | 1.2.23           | 505.2.0  | 506.0.0    | [Usage Guide](./Druid/1.2.x/README_en.md)           |
 | Development Frameworks | Scheduled Jobs | Quartz            | 2.5.0            | 505.2.0  |    506.0.0  | [Usage Guide](./Quartz/2.5.0/README_en.md)          |
@@ -48,7 +37,6 @@ This project aggregates comprehensive information about the GaussDB open-source 
 | Database Tools | ETL | Addx              | 6.0.2            | 505.2.0  | 506.0.0    | [Usage Guide](Addx/README_en.md)                    |                                            |
 | Database Tools | ETL | DataX             | 4.0.0            | 505.2.0  | 506.0.0    | [Usage Guide](DataX/README_en.md)                   |                                            |
 | Database Tools | ETL | Kettle            | 9.3.0            | 505.2.0  | 506.0.0    | [Usage Guide](Kettle/README_en.md)            |
-| Database Tools | ETL | Airflow             |                  |  |            |                                                     |
 | Database Tools | ETL | Flink(JDBC Connector) | 3.3.0            | 505.2.0  | 506.0.0    | [Usage Guide](FlinkConnectorJDBC/3.3.x/README_en.md) |
 | Database Tools | ETL | Flink(JDBC Connector) | 4.0.0            | 505.2.0  | 506.0.0    | [Usage Guide](FlinkConnectorJDBC/4.0.x/README_en.md) |
 | Database Tools | ETL | Flink(CDC)           |                  | 505.2.0  | 506.0.0    |                                                     |
