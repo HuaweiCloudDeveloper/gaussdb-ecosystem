@@ -39,13 +39,8 @@
 | 数据库工具 | ETL | Airflow               | 3.0.4    | 505.2.0  | 506.0.0    | [使用指南](Airflow/README.md)                           |
 | 数据库工具 | ETL | Flink(JDBC Connector) | 3.3.0     | 505.2.0  | 506.0.0    | [使用指南](FlinkConnectorJDBC/3.3.x/README.md)          |
 | 数据库工具 | ETL | Flink(JDBC Connector) | 4.0.0     | 505.2.0  | 506.0.0    | [使用指南](FlinkConnectorJDBC/4.0.x/README.md)          |
-| 数据库工具 | ETL | Flink(CDC)            |           | 505.2.0  | 506.0.0    |                                                     |
-| 中间件 | 分布式任务 | XXL-Job               |           | 505.2.0  | 506.0.0    |                                                     |
 | 中间件 | 分布式任务 | DolphinScheduler      | 3.1.4     | 505.2.0  | 506.0.0    | [使用指南](DolphinScheduler/README.md)                  |
 | 中间件 | 分布式任务 | ElasticJob            | 3.1.0     | 505.2.0  | 506.0.0    | [使用指南](Elasticjob/3.1.0/README.md)                  |
-| 中间件 | 注册配置中心 | Nacos                 |           | 505.2.0  | 506.0.0    |                                                     |
-| 中间件 | 注册配置中心 | Apollo                |           | 505.2.0  | 506.0.0    |                                                     |
-| 中间件 | 元数据管理  | OpenMetadata          |      | 505.2.0  | 506.0.0    |                      |
 | AI | 向量检索 | LlamaIndex-GaussDB    | 0.1.0 | 505.2.0  |            | [使用指南](./LlamaIndex-GaussDB/0.1.0/README.md) |
 | AI | 向量检索 | LangChain-GaussDB     | 0.1.0 | 505.2.0  |            | [使用指南](./LangChain-GaussDB/0.1.0/README.md) |
 
