@@ -15,7 +15,6 @@
 |:------|:------|:----------------------|:----------| :------------ |:-----------|:----------------------------------------------------|
 | ORM框架 | Java   | MyBatis               | 3.5.14    |  505.2.0  | 506.0.0    | [使用指南](./MyBatis/3.5.x/README.md)                   |
 | ORM框架 | Java   | MyBatis-Plus          | 3.5.12    |  505.2.0  | 506.0.0    | [使用指南](./MyBatis-Plus/3.5.x/README.md)              |
-| ORM框架 | Java   | MyBatis-PageHelper    |           |  |            |                                                     |
 | ORM框架 | Java   | Spring JDBC           | 6.1.10    |  505.2.0  | 506.0.0    | [使用指南](./SpringJDBC/6.1.x/README.md)                |
 | ORM框架 | Java   | Spring R2DBC          | 6.1.10    |  505.2.0  | 1.0.0.RC1  | [使用指南](./SpringR2DBC/6.1.x/README.md)               |
 | ORM框架 | Java   | Spring Data JPA       | 3.4.5     |  505.2.0  | 506.0.0    | [使用指南](./SpringDataJPA/3.4.x/README.md)             |
@@ -27,24 +26,13 @@
 | ORM框架 | Java   | Spring Data R2DBC     | 3.5.1     |  505.2.0  | 1.0.0.RC1  | [使用指南](./SpringDataR2DBC/3.5.x/README.md)           |
 | ORM框架 | Java   | Spring Data R2DBC     | 3.4.5     |  505.2.0  | 1.0.0.RC1  | [使用指南](./SpringDataR2DBC/3.4.x/README.md)           |
 | ORM框架 | Go   | GORM                  | v1.30.0   |  505.2.0  | v1.0.0-rc1 | [使用指南](./GORM/v1.30.0/README.md)                    |
-| ORM框架 | Go   | Ent                   |           |    |            |                                                     |
-| ORM框架 | .Net   | Entity Framework Core |           |    |            |                                                     |
-| ORM框架 | .Net   | Nhibernate            |           |    |            |                                                     |
-| ORM框架 | Rust   | Diesel                |           |    |            |                                                     |
-| ORM框架 | Rust   | SeaORM                |           |    |            |                                                     |
-| ORM框架 | Python   | SQLAlchemy            |           |    |            |                                                     |
 | ORM框架 | Python   | Django ORM            | 4.2.0      | 505.2.0   |  1.0.3  |  [使用指南](./DjangoORM/4.2.0/README.md)                   |
 | ORM框架 | Python   | Django ORM            | 5.2.0      | 505.2.0   |  1.0.3  |  [使用指南](./DjangoORM/5.2.0/README.md)                   |
-| ORM框架 | NodeJS   | Sequelize             |           |    |            |                                                     |
-| ORM框架 | NodeJS   | TypeORM               |           |    |            |                                                     |
-| ORM框架 | PHP   | Laravel(Eloquent)     |           |    |            |                                                     |
-| ORM框架 | PHP   | CakePHP               |           |    |            |                                                     |
 | 开发框架 | 连接池   | HikariCP              | 5.1.0     | 505.2.0  | 506.0.0    | [使用指南](./HikariCP/5.1.x/README.md)                  |
 | 开发框架 | 连接池   | Druid                 | 1.2.23    | 505.2.0  | 506.0.0    | [使用指南](./Druid/1.2.x/README.md)                     |
 | 开发框架 | 定时任务 | Quartz                | 2.5.0     | 505.2.0  |    506.0.0  | [使用指南](./Quartz/2.5.0/README.md)                    |
 | 开发框架 | 系统集成 | Apache Camel          | 4.13.0    |505.2.0|506.0.0| [使用指南](Camel/4.13.x/README.md)                      |
 | 数据库工具 | 客户端 | DBeaver               |           | 505.2.0  | 506.0.0    | [使用指南](./DBeaver/25.0.x/README.md)                  |
-| 数据库工具 | 监控运维 | Apache SkyWalking     |           |  |            |                                                     |
 | 数据库工具 | ETL | Addx                  | 6.0.2     | 505.2.0  | 506.0.0    | [使用指南](Addx/README.md)                              |
 | 数据库工具 | ETL | DataX                 | 4.0.0     | 505.2.0  | 506.0.0    | [使用指南](DataX/README.md)                             |
 | 数据库工具 | ETL | Kettle                | 9.3.0     | 505.2.0  | 506.0.0    | [使用指南](Kettle/README.md)                            |
