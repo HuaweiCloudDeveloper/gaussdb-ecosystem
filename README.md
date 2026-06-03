@@ -43,7 +43,7 @@
 | 中间件 | 分布式任务 | ElasticJob            | 3.1.0     | 505.2.0  | 506.0.0    | [使用指南](Elasticjob/3.1.0/README.md)                  |
 | AI | 向量检索 | LlamaIndex-GaussDB    | 0.1.0 | 505.2.0  |            | [使用指南](./LlamaIndex-GaussDB/0.1.0/README.md) |
 | AI | 向量检索 | LangChain-GaussDB     | 0.1.0 | 505.2.0  |            | [使用指南](./LangChain-GaussDB/0.1.0/README.md) |
-| AI | Agent 记忆 | Mem0-GaussDB     | 2.0.4 | 505.2.0  | psycopg2 2.9.x | [使用指南](./Mem0-GaussDB/2.0.4/README.md) |
+| AI | Agent 记忆 | Mem0-GaussDB     | 2.0.4 | 505.2.0  | - | [使用指南](./Mem0-GaussDB/2.0.4/README.md) |
 
 * 可以通过 `select version()` 查询GaussDB版本信息。
 * 可以参考 [gaussdb-drivers](https://github.com/HuaweiCloudDeveloper/gaussdb-drivers) 进一步了解驱动信息。
