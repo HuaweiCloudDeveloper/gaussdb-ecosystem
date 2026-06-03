@@ -1,0 +1,2 @@
+git+https://github.com/HuaweiCloudDeveloper/mem0-GaussDB.git@v2.0.4-gaussdb
+openai
